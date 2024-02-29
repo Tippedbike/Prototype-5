@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 6526012257993679911}
   - component: {fileID: 8777433554809120701}
   - component: {fileID: 7192953997749120524}
-  - component: {fileID: -9098233676203859386}
   m_Layer: 6
   m_Name: Bad 1
-  m_TagString: Untagged
+  m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,18 +127,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointValue: -1
   explosionParticle: {fileID: 15085447402717889, guid: 743ce290c74ae49c19aa3f128322fc7e, type: 3}
---- !u!114 &-9098233676203859386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5147946152376654709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87298d391f35a4003a7ae07f0583e624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targets: []
-  scoreText: {fileID: 0}
-  gameOverText: {fileID: 0}
