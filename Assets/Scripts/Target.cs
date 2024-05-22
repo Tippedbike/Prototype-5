@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,6 +46,7 @@ public class Target : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+        //gameManager.AddLives;
         if (!gameObject.CompareTag("Bad")) 
         {
             gameManager.GameOver();
