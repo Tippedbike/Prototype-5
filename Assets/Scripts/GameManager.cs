@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public GameObject titleScreen;
     
     // Start is called before the first frame update
-    
+
     public void StartGame(int difficulty)
     {
         spawnRate /= difficulty; 
@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour
         titleScreen.gameObject.SetActive(false);
         livesText.gameObject.SetActive(true);
         scoreText.gameObject.SetActive(true);
+    }
+    void Update()
+    {
+    
     }
     IEnumerator SpawnTarget()
     {
@@ -50,7 +54,11 @@ public class GameManager : MonoBehaviour
     public void UpdateLives(int livesToSubtract)
     {
         lives -= livesToSubtract;
-        scoreText.text = "Lives: " + lives;
+        livesText.text = "Lives: " + lives;
+        if(lives == 0)
+        {
+            GameOver();
+        }
     }
     public void GameOver() 
     {
