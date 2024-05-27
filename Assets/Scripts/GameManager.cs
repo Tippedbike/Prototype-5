@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     public Button restartButton;
     public GameObject titleScreen;
+    public GameObject slider; 
 
     // Start is called before the first frame update
 
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
         isGameActive = true; 
         
         titleScreen.gameObject.SetActive(false);
+        slider.gameObject.SetActive(false);
+
         livesText.gameObject.SetActive(true);
         scoreText.gameObject.SetActive(true);
        // pauseScreen.gameObject.SetActive(false);
