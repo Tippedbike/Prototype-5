@@ -13,7 +13,7 @@ public class Target : MonoBehaviour
     private GameManager gameManager;
     public int pointValue;
     public ParticleSystem explosionParticle; 
-    // Start is called before the first frame update
+    // Start is called before the first frame updateS
     void Start()
     {
         targetRb = GetComponent<Rigidbody>();

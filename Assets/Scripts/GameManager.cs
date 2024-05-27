@@ -21,10 +21,6 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     public GameObject titleScreen;
 
-    public GameObject pauseScreen;
-    public bool isPaused;
-
-    
     // Start is called before the first frame update
 
     public void StartGame(int difficulty)
@@ -36,36 +32,15 @@ public class GameManager : MonoBehaviour
         UpdateScore(0);
         UpdateLives(0);
         isGameActive = true; 
-        isPaused = false;
+        
         titleScreen.gameObject.SetActive(false);
         livesText.gameObject.SetActive(true);
         scoreText.gameObject.SetActive(true);
-        pauseScreen.gameObject.SetActive(false);
+       // pauseScreen.gameObject.SetActive(false);
     }
     void Update()
     {
     
-    }
-    public void Pause()
-    {
-     
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            if ( isPaused == true )
-                {
-                    Time.timeScale = 0;
-                    pauseScreen.gameObject.SetActive(true);
-                    isPaused = false;
-                    return;
-                }
-            else if ( isPaused == false )
-                {
-                    Time.timeScale = 1;
-                    pauseScreen.gameObject.SetActive(false);
-                    isPaused = true;
-                    return;
-                } 
-        } 
     }
     IEnumerator SpawnTarget()
     {
