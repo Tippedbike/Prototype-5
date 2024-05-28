@@ -37,9 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/Target.cs" />
+     <Compile Include="Assets/Scripts/VolumeManager.cs" />
      <Compile Include="Assets/Challenge 5/Scripts/DifficultyButtonX.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
      <Compile Include="Assets/Challenge 5/Scripts/GameManagerX.cs" />
+     <Compile Include="Assets/Scripts/PauseManager.cs" />
      <Compile Include="Assets/Scripts/DifficultyButton.cs" />
      <Compile Include="Assets/Challenge 5/Scripts/DestroyObjectX.cs" />
      <Compile Include="Assets/Challenge 5/Scripts/TargetX.cs" />
